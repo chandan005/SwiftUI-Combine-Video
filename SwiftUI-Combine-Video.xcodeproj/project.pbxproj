@@ -31,6 +31,11 @@
 		B5E3A0FB24A121B900BB0738 /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0FA24A121B900BB0738 /* VideoDetailView.swift */; };
 		B5E3A0FD24A1231C00BB0738 /* VideoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0FC24A1231C00BB0738 /* VideoDetailViewModel.swift */; };
 		B5E3A0FF24A1240800BB0738 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0FE24A1240800BB0738 /* VideoView.swift */; };
+		B5E3A10124A1265700BB0738 /* FileManagerPublisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A10024A1265700BB0738 /* FileManagerPublisher+Extension.swift */; };
+		B5E3A10324A1267B00BB0738 /* FileManagerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A10224A1267B00BB0738 /* FileManagerApi.swift */; };
+		B5E3A10524A126A400BB0738 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A10424A126A400BB0738 /* Download.swift */; };
+		B5E3A10724A126FB00BB0738 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A10624A126FB00BB0738 /* CircularProgressView.swift */; };
+		B5E3A10924A1272600BB0738 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A10824A1272600BB0738 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +66,11 @@
 		B5E3A0FA24A121B900BB0738 /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
 		B5E3A0FC24A1231C00BB0738 /* VideoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewModel.swift; sourceTree = "<group>"; };
 		B5E3A0FE24A1240800BB0738 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		B5E3A10024A1265700BB0738 /* FileManagerPublisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManagerPublisher+Extension.swift"; sourceTree = "<group>"; };
+		B5E3A10224A1267B00BB0738 /* FileManagerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerApi.swift; sourceTree = "<group>"; };
+		B5E3A10424A126A400BB0738 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		B5E3A10624A126FB00BB0738 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		B5E3A10824A1272600BB0738 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +178,7 @@
 				B5E3A0F524A11F6500BB0738 /* ImageCache.swift */,
 				B5E3A0F724A11F7400BB0738 /* ImageLoader.swift */,
 				B5E3A0FE24A1240800BB0738 /* VideoView.swift */,
+				B5E3A10624A126FB00BB0738 /* CircularProgressView.swift */,
 			);
 			path = "CustomViews+Controls";
 			sourceTree = "<group>";
@@ -187,6 +198,8 @@
 				B5E3A0E524A11A3A00BB0738 /* Feedback+Extension.swift */,
 				B5E3A0E724A11A4C00BB0738 /* View+Extension.swift */,
 				B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */,
+				B5E3A10024A1265700BB0738 /* FileManagerPublisher+Extension.swift */,
+				B5E3A10824A1272600BB0738 /* Color+Extension.swift */,
 			);
 			path = "Extension+Protocols";
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 				B5E3A0DF24A118F400BB0738 /* VideoDTO.swift */,
 				B5E3A0E124A1190C00BB0738 /* VideoPageDTO.swift */,
 				B5E3A0E324A1192900BB0738 /* VideoListItem.swift */,
+				B5E3A10424A126A400BB0738 /* Download.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -224,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B5E3A0ED24A11BCB00BB0738 /* VideoApi.swift */,
+				B5E3A10224A1267B00BB0738 /* FileManagerApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -361,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E3A10324A1267B00BB0738 /* FileManagerApi.swift in Sources */,
+				B5E3A10924A1272600BB0738 /* Color+Extension.swift in Sources */,
 				B5E3A0E224A1190C00BB0738 /* VideoPageDTO.swift in Sources */,
 				B5E3A0E824A11A4C00BB0738 /* View+Extension.swift in Sources */,
 				B5E3A0F624A11F6500BB0738 /* ImageCache.swift in Sources */,
@@ -370,16 +387,19 @@
 				B5E3A0BC24A10A2100BB0738 /* AppDelegate.swift in Sources */,
 				B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */,
 				B5E3A0E024A118F400BB0738 /* VideoDTO.swift in Sources */,
+				B5E3A10724A126FB00BB0738 /* CircularProgressView.swift in Sources */,
 				B5E3A0E624A11A3A00BB0738 /* Feedback+Extension.swift in Sources */,
 				B5E3A0BE24A10A2100BB0738 /* SceneDelegate.swift in Sources */,
 				B5E3A0F824A11F7400BB0738 /* ImageLoader.swift in Sources */,
 				B5E3A0EC24A11BAC00BB0738 /* ApiAgent.swift in Sources */,
+				B5E3A10124A1265700BB0738 /* FileManagerPublisher+Extension.swift in Sources */,
 				B5E3A0FB24A121B900BB0738 /* VideoDetailView.swift in Sources */,
 				B5E3A0FD24A1231C00BB0738 /* VideoDetailViewModel.swift in Sources */,
 				B5E3A0F024A11D7200BB0738 /* VideoListRowView.swift in Sources */,
 				B5E3A0FF24A1240800BB0738 /* VideoView.swift in Sources */,
 				B5E3A0E424A1192900BB0738 /* VideoListItem.swift in Sources */,
 				B5E3A0EE24A11BCB00BB0738 /* VideoApi.swift in Sources */,
+				B5E3A10524A126A400BB0738 /* Download.swift in Sources */,
 				B5E3A0DA24A116A300BB0738 /* VideoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
