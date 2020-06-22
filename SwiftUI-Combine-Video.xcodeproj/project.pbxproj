@@ -25,6 +25,9 @@
 		B5E3A0EE24A11BCB00BB0738 /* VideoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0ED24A11BCB00BB0738 /* VideoApi.swift */; };
 		B5E3A0F024A11D7200BB0738 /* VideoListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0EF24A11D7200BB0738 /* VideoListRowView.swift */; };
 		B5E3A0F224A11E4200BB0738 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0F124A11E4200BB0738 /* Spinner.swift */; };
+		B5E3A0F424A11F5500BB0738 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0F324A11F5500BB0738 /* AsyncImage.swift */; };
+		B5E3A0F624A11F6500BB0738 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0F524A11F6500BB0738 /* ImageCache.swift */; };
+		B5E3A0F824A11F7400BB0738 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0F724A11F7400BB0738 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		B5E3A0ED24A11BCB00BB0738 /* VideoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoApi.swift; sourceTree = "<group>"; };
 		B5E3A0EF24A11D7200BB0738 /* VideoListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListRowView.swift; sourceTree = "<group>"; };
 		B5E3A0F124A11E4200BB0738 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		B5E3A0F324A11F5500BB0738 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		B5E3A0F524A11F6500BB0738 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		B5E3A0F724A11F7400BB0738 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				B5E3A0F124A11E4200BB0738 /* Spinner.swift */,
+				B5E3A0F324A11F5500BB0738 /* AsyncImage.swift */,
+				B5E3A0F524A11F6500BB0738 /* ImageCache.swift */,
+				B5E3A0F724A11F7400BB0738 /* ImageLoader.swift */,
 			);
 			path = "CustomViews+Controls";
 			sourceTree = "<group>";
@@ -337,13 +346,16 @@
 			files = (
 				B5E3A0E224A1190C00BB0738 /* VideoPageDTO.swift in Sources */,
 				B5E3A0E824A11A4C00BB0738 /* View+Extension.swift in Sources */,
+				B5E3A0F624A11F6500BB0738 /* ImageCache.swift in Sources */,
 				B5E3A0DC24A1171C00BB0738 /* VideoListView.swift in Sources */,
 				B5E3A0F224A11E4200BB0738 /* Spinner.swift in Sources */,
+				B5E3A0F424A11F5500BB0738 /* AsyncImage.swift in Sources */,
 				B5E3A0BC24A10A2100BB0738 /* AppDelegate.swift in Sources */,
 				B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */,
 				B5E3A0E024A118F400BB0738 /* VideoDTO.swift in Sources */,
 				B5E3A0E624A11A3A00BB0738 /* Feedback+Extension.swift in Sources */,
 				B5E3A0BE24A10A2100BB0738 /* SceneDelegate.swift in Sources */,
+				B5E3A0F824A11F7400BB0738 /* ImageLoader.swift in Sources */,
 				B5E3A0EC24A11BAC00BB0738 /* ApiAgent.swift in Sources */,
 				B5E3A0F024A11D7200BB0738 /* VideoListRowView.swift in Sources */,
 				B5E3A0E424A1192900BB0738 /* VideoListItem.swift in Sources */,
