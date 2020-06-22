@@ -18,6 +18,9 @@
 		B5E3A0E024A118F400BB0738 /* VideoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0DF24A118F400BB0738 /* VideoDTO.swift */; };
 		B5E3A0E224A1190C00BB0738 /* VideoPageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E124A1190C00BB0738 /* VideoPageDTO.swift */; };
 		B5E3A0E424A1192900BB0738 /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E324A1192900BB0738 /* VideoListItem.swift */; };
+		B5E3A0E624A11A3A00BB0738 /* Feedback+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E524A11A3A00BB0738 /* Feedback+Extension.swift */; };
+		B5E3A0E824A11A4C00BB0738 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E724A11A4C00BB0738 /* View+Extension.swift */; };
+		B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		B5E3A0DF24A118F400BB0738 /* VideoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDTO.swift; sourceTree = "<group>"; };
 		B5E3A0E124A1190C00BB0738 /* VideoPageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPageDTO.swift; sourceTree = "<group>"; };
 		B5E3A0E324A1192900BB0738 /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
+		B5E3A0E524A11A3A00BB0738 /* Feedback+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feedback+Extension.swift"; sourceTree = "<group>"; };
+		B5E3A0E724A11A4C00BB0738 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +158,9 @@
 		B5E3A0D524A10B8500BB0738 /* Extension+Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3A0E524A11A3A00BB0738 /* Feedback+Extension.swift */,
+				B5E3A0E724A11A4C00BB0738 /* View+Extension.swift */,
+				B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */,
 			);
 			path = "Extension+Protocols";
 			sourceTree = "<group>";
@@ -315,9 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E3A0E224A1190C00BB0738 /* VideoPageDTO.swift in Sources */,
+				B5E3A0E824A11A4C00BB0738 /* View+Extension.swift in Sources */,
 				B5E3A0DC24A1171C00BB0738 /* VideoListView.swift in Sources */,
 				B5E3A0BC24A10A2100BB0738 /* AppDelegate.swift in Sources */,
+				B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */,
 				B5E3A0E024A118F400BB0738 /* VideoDTO.swift in Sources */,
+				B5E3A0E624A11A3A00BB0738 /* Feedback+Extension.swift in Sources */,
 				B5E3A0BE24A10A2100BB0738 /* SceneDelegate.swift in Sources */,
 				B5E3A0E424A1192900BB0738 /* VideoListItem.swift in Sources */,
 				B5E3A0DA24A116A300BB0738 /* VideoListViewModel.swift in Sources */,
