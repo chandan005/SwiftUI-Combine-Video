@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9017DDFCBE17AD9019F04808 /* Pods_SwiftUI_Combine_Video.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E9677697684399A2A20887 /* Pods_SwiftUI_Combine_Video.framework */; };
 		B5E3A0BC24A10A2100BB0738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0BB24A10A2100BB0738 /* AppDelegate.swift */; };
 		B5E3A0BE24A10A2100BB0738 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0BD24A10A2100BB0738 /* SceneDelegate.swift */; };
 		B5E3A0C224A10A2300BB0738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E3A0C124A10A2300BB0738 /* Assets.xcassets */; };
@@ -39,8 +38,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		981C2548F29903EB2A0FED9D /* Pods-SwiftUI-Combine-Video.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.debug.xcconfig"; sourceTree = "<group>"; };
-		B0E9677697684399A2A20887 /* Pods_SwiftUI_Combine_Video.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Combine_Video.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E3A0B824A10A2100BB0738 /* SwiftUI-Combine-Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Combine-Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E3A0BB24A10A2100BB0738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E3A0BD24A10A2100BB0738 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		B5E3A10424A126A400BB0738 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		B5E3A10624A126FB00BB0738 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		B5E3A10824A1272600BB0738 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,28 +75,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9017DDFCBE17AD9019F04808 /* Pods_SwiftUI_Combine_Video.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F0D5D7C31A5C77E8E891BCD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B0E9677697684399A2A20887 /* Pods_SwiftUI_Combine_Video.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		B5E3A0AF24A10A2100BB0738 = {
 			isa = PBXGroup;
 			children = (
 				B5E3A0BA24A10A2100BB0738 /* SwiftUI-Combine-Video */,
 				B5E3A0B924A10A2100BB0738 /* Products */,
 				D45A4C9085CA549F508CEC3A /* Pods */,
-				7F0D5D7C31A5C77E8E891BCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,8 +241,6 @@
 		D45A4C9085CA549F508CEC3A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				981C2548F29903EB2A0FED9D /* Pods-SwiftUI-Combine-Video.debug.xcconfig */,
-				D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -268,11 +252,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5E3A0CC24A10A2300BB0738 /* Build configuration list for PBXNativeTarget "SwiftUI-Combine-Video" */;
 			buildPhases = (
-				87596FDBB34DA18BD767CBDF /* [CP] Check Pods Manifest.lock */,
 				B5E3A0B424A10A2100BB0738 /* Sources */,
 				B5E3A0B524A10A2100BB0738 /* Frameworks */,
 				B5E3A0B624A10A2100BB0738 /* Resources */,
-				A97A6316F1F1AF35509AFCB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,48 +310,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		87596FDBB34DA18BD767CBDF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-Combine-Video-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A97A6316F1F1AF35509AFCB1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5E3A0B424A10A2100BB0738 /* Sources */ = {
@@ -534,7 +474,6 @@
 		};
 		B5E3A0CD24A10A2300BB0738 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 981C2548F29903EB2A0FED9D /* Pods-SwiftUI-Combine-Video.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,7 +494,6 @@
 		};
 		B5E3A0CE24A10A2300BB0738 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
