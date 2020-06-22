@@ -28,6 +28,9 @@ struct VideoListView: View {
             return Spinner(isAnimating: true, style: .large).eraseToAnyView()
         case .error(let error):
             return Text(error.localizedDescription).eraseToAnyView()
+        case .retrying:
+            viewModel.send(event: .onFailedToLoadVideosFromApi)
+            return EmptyView().eraseToAnyView()
         case .loaded(let videos):
             return list(of: videos).eraseToAnyView()
         }
