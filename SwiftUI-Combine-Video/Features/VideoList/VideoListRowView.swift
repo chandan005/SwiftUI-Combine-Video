@@ -9,12 +9,15 @@
 import Combine
 import SwiftUI
 
-struct VideoListRowView {
+struct VideoListRowView: View {
     let video: VideoListItem
     @Environment(\.imageCache) var cache: ImageCache
     
     var body: some View {
-        name
+        HStack(alignment: .top, spacing: 8) {
+            thumbnail
+            name
+        }
     }
     
     private var name: some View {

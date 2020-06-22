@@ -13,7 +13,11 @@ struct VideoListView: View {
     @ObservedObject var viewModel: VideoListViewModel
     
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            content
+                .navigationBarTitle("Videos")
+        }
+        .onAppear { self.viewModel.send(event: .onAppear) }
     }
     
     private var content: some View {
@@ -31,7 +35,9 @@ struct VideoListView: View {
     
     private func list(of videos: [VideoListItem]) -> some View {
         return List(videos) { video in
-            Text(video.name)
+            NavigationLink(destination: VideoDetailView(), label: {
+                VideoListRowView(video: video)
+            })
         }
     }
 }
