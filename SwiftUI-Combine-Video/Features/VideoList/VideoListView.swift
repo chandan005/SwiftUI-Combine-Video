@@ -35,7 +35,7 @@ struct VideoListView: View {
     
     private func list(of videos: [VideoListItem]) -> some View {
         return List(videos) { video in
-            NavigationLink(destination: VideoDetailView(), label: {
+            NavigationLink(destination: VideoDetailView(viewModel: VideoDetailViewModel(videoDetail: video)), label: {
                 VideoListRowView(video: video)
             })
         }
