@@ -23,6 +23,8 @@
 		B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */; };
 		B5E3A0EC24A11BAC00BB0738 /* ApiAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0EB24A11BAC00BB0738 /* ApiAgent.swift */; };
 		B5E3A0EE24A11BCB00BB0738 /* VideoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0ED24A11BCB00BB0738 /* VideoApi.swift */; };
+		B5E3A0F024A11D7200BB0738 /* VideoListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0EF24A11D7200BB0738 /* VideoListRowView.swift */; };
+		B5E3A0F224A11E4200BB0738 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3A0F124A11E4200BB0738 /* Spinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		B5E3A0E924A11A6600BB0738 /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
 		B5E3A0EB24A11BAC00BB0738 /* ApiAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAgent.swift; sourceTree = "<group>"; };
 		B5E3A0ED24A11BCB00BB0738 /* VideoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoApi.swift; sourceTree = "<group>"; };
+		B5E3A0EF24A11D7200BB0738 /* VideoListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListRowView.swift; sourceTree = "<group>"; };
+		B5E3A0F124A11E4200BB0738 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		D5F76F5A18E35F72489CB33A /* Pods-SwiftUI-Combine-Video.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Combine-Video.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Combine-Video/Pods-SwiftUI-Combine-Video.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 		B5E3A0D324A10B7100BB0738 /* CustomViews+Controls */ = {
 			isa = PBXGroup;
 			children = (
+				B5E3A0F124A11E4200BB0738 /* Spinner.swift */,
 			);
 			path = "CustomViews+Controls";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			children = (
 				B5E3A0D924A116A300BB0738 /* VideoListViewModel.swift */,
 				B5E3A0DB24A1171C00BB0738 /* VideoListView.swift */,
+				B5E3A0EF24A11D7200BB0738 /* VideoListRowView.swift */,
 			);
 			path = VideoList;
 			sourceTree = "<group>";
@@ -332,12 +338,14 @@
 				B5E3A0E224A1190C00BB0738 /* VideoPageDTO.swift in Sources */,
 				B5E3A0E824A11A4C00BB0738 /* View+Extension.swift in Sources */,
 				B5E3A0DC24A1171C00BB0738 /* VideoListView.swift in Sources */,
+				B5E3A0F224A11E4200BB0738 /* Spinner.swift in Sources */,
 				B5E3A0BC24A10A2100BB0738 /* AppDelegate.swift in Sources */,
 				B5E3A0EA24A11A6600BB0738 /* Publisher+Extension.swift in Sources */,
 				B5E3A0E024A118F400BB0738 /* VideoDTO.swift in Sources */,
 				B5E3A0E624A11A3A00BB0738 /* Feedback+Extension.swift in Sources */,
 				B5E3A0BE24A10A2100BB0738 /* SceneDelegate.swift in Sources */,
 				B5E3A0EC24A11BAC00BB0738 /* ApiAgent.swift in Sources */,
+				B5E3A0F024A11D7200BB0738 /* VideoListRowView.swift in Sources */,
 				B5E3A0E424A1192900BB0738 /* VideoListItem.swift in Sources */,
 				B5E3A0EE24A11BCB00BB0738 /* VideoApi.swift in Sources */,
 				B5E3A0DA24A116A300BB0738 /* VideoListViewModel.swift in Sources */,

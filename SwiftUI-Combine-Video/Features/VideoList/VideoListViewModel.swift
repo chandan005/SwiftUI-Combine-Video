@@ -15,7 +15,21 @@ final class VideoListViewModel: ObservableObject {
     private let input = PassthroughSubject<Event, Never>()
     
     init() {
-        
+        Publishers.system(
+            initial: state,
+            reduce: Self.reduce,
+            scheduler: RunLoop.main,
+            feedbacks: [
+                Self.whenLoading(),
+                Self.userInput(input: input.eraseToAnyPublisher())
+            ]
+        )
+        .assign(to: \.state, on: self)
+        .store(in: &bag)
+    }
+    
+    func send(event: Event) {
+        input.send(event)
     }
     
     deinit {
@@ -64,5 +78,22 @@ extension VideoListViewModel {
         case .error:
             return state
         }
+    }
+    
+    static func whenLoading() -> Feedback<State, Event> {
+        Feedback { (state: State) -> AnyPublisher<Event, Never> in
+            guard case .loading = state else { return Empty().eraseToAnyPublisher() }
+            return VideoApi.videos()
+                .map { videos in
+                    return videos.videos.map(VideoListItem.init)
+                }
+                .map(Event.onVideosLoaded)
+            .catch { Just(Event.onFailedToLoadVideos($0))}
+                .eraseToAnyPublisher()
+        }
+    }
+    
+    static func userInput(input: AnyPublisher<Event, Never>) -> Feedback<State, Event> {
+        Feedback { _ in input }
     }
 }
